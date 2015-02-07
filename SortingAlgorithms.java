@@ -7,7 +7,7 @@ import java.util.Random;
  * <pre>
  * Hours:        4 hours
  * Created on:   May 18, 2012
- * Revised on:   May 22, 2012
+ * Revised on:   February 06, 2015
  * </pre>
  *
  * @author:	Machunde S. Tandasi
@@ -283,9 +283,9 @@ public class SortingAlgorithms extends javax.swing.JFrame {
         getContentPane().add(controlJPanel, java.awt.BorderLayout.SOUTH);
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void createJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createJButtonActionPerformed
+    private void createJButtonActionPerformed(java.awt.event.ActionEvent evt) {
         for (int i = 0; i < MAX_NUMBER; i++) {
             integerArray[i] = rand.nextInt(RANGE);
         }
@@ -293,10 +293,9 @@ public class SortingAlgorithms extends javax.swing.JFrame {
         sortJButton.setEnabled(true);
         linearJRadioButton.setEnabled(true);
         binaryJRadioButton.setEnabled(true);
-    }//GEN-LAST:event_createJButtonActionPerformed
+    }
 
-    private void sortJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sortJButtonActionPerformed
-        // Perform the required sort
+    private void sortJButtonActionPerformed(java.awt.event.ActionEvent evt) {
         int radButton = whichSortRadioButton();
         // Create an array of primitive int types
         int[] dataArray = new int[integerArray.length];
@@ -689,7 +688,7 @@ public class SortingAlgorithms extends javax.swing.JFrame {
             }
         });
     }
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+
     private javax.swing.JRadioButton binaryJRadioButton;
     private javax.swing.JTextField binaryJTextField;
     private javax.swing.JRadioButton bubbleJRadioButton;
@@ -721,5 +720,4 @@ public class SortingAlgorithms extends javax.swing.JFrame {
     private javax.swing.JPanel sortingJPanel;
     private javax.swing.JLabel timeJLabel;
     private javax.swing.JTextField timeJTextField;
-    // End of variables declaration//GEN-END:variables
 }
